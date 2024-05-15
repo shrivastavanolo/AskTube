@@ -1,6 +1,6 @@
 # AskTube
 
-## Demo[https://www.loom.com/share/13b6cb2e76bf4051b49cc12ee8ffd8fe?sid=d60cf53c-049f-451b-89e8-d62096911f17]
+## [Demo](https://www.loom.com/share/13b6cb2e76bf4051b49cc12ee8ffd8fe?sid=d60cf53c-049f-451b-89e8-d62096911f17)
 
 ## AI-Powered Q&A Web Application
 This repository hosts the source code for an AI-powered question-answering (Q&A) web application. This application enables users to input a YouTube video URL along with a query, leveraging various AI techniques to transcribe the video's audio, process the query, and generate relevant answers.
