@@ -40,7 +40,6 @@ To run the web application, follow these steps:
 2. Execute the following command in your terminal:
 
 ```
-Copy code
 python app.py
 ```
 This will start the Flask server, and the application will be accessible at http://127.0.0.1:5000/.
