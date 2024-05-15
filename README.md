@@ -6,21 +6,15 @@ This repository hosts the source code for an AI-powered question-answering (Q&A)
 ### Technologies Used:
 
 ##### Programming Languages
-**Python**: The primary language for development due to its versatility and extensive libraries for AI and web development.
+1. **Python**: The primary language for development due to its versatility and extensive libraries for AI and web development.
 Libraries and Frameworks
-
-**Flask**: A lightweight and flexible web framework used to create the API endpoints for the application.
-
-**PyTube**: A Python library that interacts with the YouTube API to download video content.
-
-**OpenAI API**: Integrated for audio transcription and natural language processing tasks, enabling the application to understand and respond to user queries effectively.
-
-**Tkinter**: Used for creating a simple graphical user interface (GUI) for interacting with the web application.
+2. **Flask**: A lightweight and flexible web framework used to create the API endpoints for the application.
+3. **PyTube**: A Python library that interacts with the YouTube API to download video content.
+4. **OpenAI API**: Integrated for audio transcription and natural language processing tasks, enabling the application to understand and respond to user queries effectively.
+5. **Tkinter**: Used for creating a simple graphical user interface (GUI) for interacting with the web application.
 AI and Machine Learning
-
-**OpenAI GPT-3**: Utilized for text generation and understanding, enabling the application to provide accurate and contextually relevant responses.
-
-**FAISS** (Facebook AI Similarity Search): Implemented for efficient similarity search on transcribed text data, enhancing the application's ability to retrieve relevant answers.
+6. **OpenAI GPT-3**: Utilized for text generation and understanding, enabling the application to provide accurate and contextually relevant responses.
+7. **FAISS** (Facebook AI Similarity Search): Implemented for efficient similarity search on transcribed text data, enhancing the application's ability to retrieve relevant answers.
 
 ### Code Structure:
 
@@ -30,6 +24,21 @@ The repository consists of several Python scripts, each serving a specific purpo
 3. helper.py: Provides a high-level function to orchestrate the entire process, taking a YouTube video URL and a query as input and returning the generated answer.
 4. app.py: Defines a Flask web application with an endpoint to receive URL and query parameters and return the generated answer.
 5. gui.py: Implements a simple graphical user interface using Tkinter, allowing users to interact with the web application through a user-friendly interface.
+
+### Configuration
+Before running the application, ensure you have set up your OpenAI API key. Follow these steps:
+
+1. Obtain an OpenAI API Key: If you haven't already, sign up for an account on the OpenAI platform and obtain your API key. You can do this by visiting the OpenAI website and following the instructions provided.
+2. Create a secret.py File: Create a file named secret.py in the root directory of the project. This file will store your sensitive information, including the OpenAI API key.
+3. Set the API Key in secret.py: Inside secret.py, assign your API key to a variable named openaiapi:
+```
+openaiapi = "your-api-key-here"
+```
+Import the API Key in Your Code: In your main Python scripts (such as transcrib.py, rag.py, etc.), import the API key from secret.py:
+```
+from secret import openaiapi
+```
+This ensures that your API key remains secure and separate from your main codebase.
 
 ### Usage:
 
